@@ -2,11 +2,11 @@
 
 window.addEventListener("load", function() {
     let list = document.getElementById("faultyItems");
-    list.style.visibility = "visible";
+    list.style.visibility = "hidden";
 
     let listedPlanets;
     // Set listedPlanetsResponse equal to the value returned by calling myFetch()
-    let listedPlanetsResponse = myFetch();
+    let listedPlanetsResponse = fetch();
  
     listedPlanetsResponse.then(function (result) {
         listedPlanets = result;
